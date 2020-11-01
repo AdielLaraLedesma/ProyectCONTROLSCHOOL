@@ -1,0 +1,40 @@
+﻿<table class="table table-bordered table-hover table-striped col-md-12">
+    <thead>
+        <tr class="label-primary">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Dirección</th>
+            <th>Salario</th>
+            <th>TienePlaza</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.Profesores != null)
+        {
+            foreach (var Profesor in @ViewBag.Profesores)
+            {
+                <tr>
+                    <td>Profesor.ID</td>
+                    <td>Profesor.Nombre</td>
+                    <td>Profesor.Apellidos</td>
+                    <td>Profesor.Direccion</td>
+                    <td>PRofesor.Salario</td>
+                    <td>Profesor.TienePlaza</td>
+                    <td></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7">
+                    No hay datos registrados
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>

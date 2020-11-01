@@ -1,0 +1,37 @@
+﻿<table class="table table-bordered table-hover table-striped col-md-12">
+    <thead>
+        <tr class="label-primary">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Grado</th>
+            <th>ID Profesor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.Cursos != null)
+        {
+            foreach (var Curso in @ViewBag.Cursos)
+            {
+                <tr>
+                    <td>Curso.ID</td>
+                    <td>Curso.Nombre</td>
+                    <td>Curso.Grado</td>
+                    <td>Curso.IDProfesor</td>
+                    <td></td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">
+                    No hay datos registrados
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+

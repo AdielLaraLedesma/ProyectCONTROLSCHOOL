@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - School Control</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("SCHOOLCONTROL", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Alumno", "Index", "Student")</li>
+                    <li>@Html.ActionLink("Profesor", "Index", "Teacher")</li>
+                    <li>@Html.ActionLink("Curso", "Index", "Course")</li>
+                    <li>@Html.ActionLink("Curso Estudiante", "Index", "CourseStudent")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script type="text/javascript">
+        var url = {
+            student: {
+                get: '@Url.Action("Get" , "Student")',
+                getbyid: '@Url.Action("GetByID", "Student")',
+                register: '@Url.Action("Register", "Student")',
+                modify: '@Url.Action("Modify", "Student")',
+                delete: '@Url.Action("Delete" , "Student")'
+            },
+            teacher: {
+                get: '@Url.Action("Get", "Teacher")',
+                getbyid: '@Url.Action("GetByID", "Teacher")',
+                register: '@Url.Action("Register", "Teacher")',
+                modify: '@Url.Action("Modify", "Teacher")',
+                delete: '@Url.Action("Delete" , "Teacher")'
+            },
+            course: {
+                get: '@Url.Action("Get", "Course")',
+                getbyid: '@Url.Action("GetByID", "Course")',
+                register: '@Url.Action("Register", "Course")',
+                modify: '@Url.Action("Modify", "Course")',
+                delete: '@Url.Action("Delete", "Course")'
+            },
+            coursestudent: {
+                get: '@Url.Action("Get", "CourseStudent")',
+                register: '@Url.Action("Register", "CourseStudent")',
+                modify: '@Url.Action("Modify", "CourseStudent")',
+                delete: '@Url.Action("Delete", "CourseStudent")'
+            }
+        };
+    </script>
+
+
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

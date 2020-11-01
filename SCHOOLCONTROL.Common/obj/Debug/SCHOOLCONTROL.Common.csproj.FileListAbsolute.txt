@@ -1,0 +1,12 @@
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\bin\Debug\SCHOOLCONTROL.Common.dll
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\bin\Debug\SCHOOLCONTROL.Common.pdb
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.csprojAssemblyReference.cache
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.csproj.CoreCompileInputs.cache
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.dll
+C:\Users\e-alara\source\repos\CONTROLSCHOOL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.pdb
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\bin\Debug\SCHOOLCONTROL.Common.dll
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\bin\Debug\SCHOOLCONTROL.Common.pdb
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.csproj.CoreCompileInputs.cache
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.dll
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.pdb
+C:\Users\e-alara\source\repos\SCHOOLCONTROL\SCHOOLCONTROL.Common\obj\Debug\SCHOOLCONTROL.Common.csprojAssemblyReference.cache

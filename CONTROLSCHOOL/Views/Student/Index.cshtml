@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Estudiantes";
+}
+<form class="form-horizontal">
+    <div class="col-md-12">
+        &nbsp;
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Nombre:</label>
+        <div class="col-md-9">
+            <input type="text" class="form-control" id="txtSearch" />
+        </div>
+        <div class="col-md-1">
+            <button id="btnSearch" type="button" class="btn btn-primary pull-right">Buscar</button>
+        </div>
+    </div>
+
+    <button id="btnRegister" type="button" class="btn btn-primary col-md-offset-11 col-md-1">Registrar</button>
+
+    <div class="col-md-12">
+        &nbsp;
+    </div>
+
+    @Html.Partial("TableStudents")
+</form>
+
+
+
+@Html.Partial("ModalEntity")
+
+@Html.Partial("Confirmation")
+
+@section scripts {
+    @Scripts.Render("~/Scripts/Shared/confirmation.js")
+    @Scripts.Render("~/Scripts/Views/Student/student.js")
+}

@@ -1,0 +1,43 @@
+﻿<div id="modalEntity" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Registrar Estudiante</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Nombre:</label>
+                        <div class="col-md-9">
+                            <input id="txtName1" class="form-control" type="text" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Apellidos:</label>
+                        <div class="col-md-9">
+                            <input id="txtLastNames" class="form-control" type="text" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Dirección:</label>
+                        <div class="col-md-9">
+                            <input id="txtAddress" class="form-control" type="text" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Calificacion:</label>
+                        <div class="col-md-9">
+                            <input id="txtScore" class="form-control" type="number" required min="0" max="100"/>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button id="btnSave" type="button" class="btn btn-primary">Registrar</button>
+                <button id="btnCancel" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
